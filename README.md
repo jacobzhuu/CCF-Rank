@@ -5,7 +5,6 @@ Zotero CCF 分级助手
 [![zotero target version](https://img.shields.io/badge/Zotero-7%20%7C%208-green?style=flat-square&logo=zotero&logoColor=CC2936)](https://www.zotero.org)
 [![Using Zotero Plugin Template](https://img.shields.io/badge/Using-Zotero%20Plugin%20Template-blue?style=flat-square&logo=github)](https://github.com/windingwind/zotero-plugin-template)
 [![GitHub stars](https://img.shields.io/github/stars/jacobzhuu/CCF-Rank?style=social)](https://github.com/jacobzhuu/CCF-Rank)
-[![GitHub release](https://img.shields.io/github/v/release/jacobzhuu/CCF-Rank?style=flat-square)](https://github.com/jacobzhuu/CCF-Rank/releases)
 [![License](https://img.shields.io/badge/License-AGPL%203.0--or--later-blue?style=flat-square)](./LICENSE)
 
 一个面向 Zotero 的 CCF 刊会分级插件。它会根据文献元数据自动匹配中国计算机学会推荐国际学术会议和期刊目录，并在文献列表中直接显示等级、分类、来源和匹配等级。
@@ -28,10 +27,12 @@ Zotero CCF 分级助手
 
 ### 直接安装
 
-1. 从 [Releases](https://github.com/jacobzhuu/CCF-Rank/releases) 下载最新 `.xpi`，或直接使用仓库根目录下的 [ccf-rank-for-zotero.xpi](./ccf-rank-for-zotero.xpi)
+1. 如果仓库已经发布 Release，从 [Releases](https://github.com/jacobzhuu/CCF-Rank/releases) 下载最新 `.xpi`
 2. 打开 Zotero，进入 `工具 -> 插件`
 3. 点击右上角齿轮按钮，选择 `Install Add-on From File...`
 4. 选择下载的 `.xpi` 文件并重启 Zotero
+
+如果当前仓库还没有发布 Release，请按下面的“从源码构建”步骤生成本地安装包。
 
 ### 从源码构建
 
