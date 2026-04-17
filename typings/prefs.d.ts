@@ -7,8 +7,12 @@
 declare namespace _ZoteroTypes {
   interface Prefs {
     PluginPrefsMap: {
-      "enable": boolean;
-      "input": string;
+      "autoLookupEnabled": boolean;
+      "writeCacheToExtra": boolean;
+      "minMatchScore": number;
+      "showAbbrColumn": boolean;
+      "enableDebugLog": boolean;
+      "customAliasRules": string;
     };
   }
 }

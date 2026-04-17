@@ -11,6 +11,7 @@ class Addon {
     env: "development" | "production";
     initialized?: boolean;
     ztoolkit: ZToolkit;
+    windowToolkits: Map<Window, ZToolkit>;
     locale?: {
       current: any;
     };
@@ -33,6 +34,7 @@ class Addon {
       env: __env__,
       initialized: false,
       ztoolkit: createZToolkit(),
+      windowToolkits: new Map(),
     };
     this.hooks = hooks;
     this.api = {};

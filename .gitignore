@@ -16,3 +16,6 @@ build
 logs
 claude.md
 .claude/
+
+# Build artifacts
+*.xpi

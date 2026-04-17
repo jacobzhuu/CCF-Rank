@@ -5,24 +5,64 @@
   onload="Zotero.__addonInstance__.hooks.onPrefsEvent('load', { window })"
 >
   <label><html:h2 data-l10n-id="pref-title"></html:h2></label>
+  <html:p data-l10n-id="pref-description"></html:p>
+
   <checkbox
-    id="zotero-prefpane-__addonRef__-enable"
-    preference="enable"
-    data-l10n-id="pref-enable"
+    id="zotero-prefpane-__addonRef__-auto-lookup-enabled"
+    data-l10n-id="pref-auto-lookup"
   />
-  <hbox>
+  <checkbox
+    id="zotero-prefpane-__addonRef__-write-cache-to-extra"
+    data-l10n-id="pref-write-cache-to-extra"
+  />
+  <checkbox
+    id="zotero-prefpane-__addonRef__-show-abbr-column"
+    data-l10n-id="pref-show-abbr-column"
+  />
+  <checkbox
+    id="zotero-prefpane-__addonRef__-enable-debug-log"
+    data-l10n-id="pref-enable-debug-log"
+  />
+
+  <hbox align="center">
     <html:label
-      for="zotero-prefpane-__addonRef__-input"
-      data-l10n-id="pref-input"
+      for="zotero-prefpane-__addonRef__-min-match-score"
+      data-l10n-id="pref-min-match-score"
     ></html:label>
     <html:input
-      type="text"
-      id="zotero-prefpane-__addonRef__-input"
-      preference="input"
+      type="number"
+      min="600"
+      max="1000"
+      step="10"
+      id="zotero-prefpane-__addonRef__-min-match-score"
     ></html:input>
   </hbox>
-  <hbox class="virtualized-table-container" flex="1" height="300px">
-    <html:div id="__addonRef__-table-container" />
+  <html:p data-l10n-id="pref-min-match-score-hint"></html:p>
+
+  <separator class="thin" />
+
+  <label><html:h3 data-l10n-id="pref-alias-title"></html:h3></label>
+  <html:p data-l10n-id="pref-alias-description"></html:p>
+  <html:textarea
+    id="zotero-prefpane-__addonRef__-custom-alias-rules"
+    rows="8"
+    style="width: 100%; min-height: 140px"
+  ></html:textarea>
+  <html:p data-l10n-id="pref-alias-hint"></html:p>
+
+  <separator class="thin" />
+
+  <label><html:h3 data-l10n-id="pref-maintenance-title"></html:h3></label>
+  <html:p data-l10n-id="pref-maintenance-desc"></html:p>
+  <hbox>
+    <button
+      id="zotero-prefpane-__addonRef__-rescan-collection"
+      data-l10n-id="pref-rescan-collection"
+    />
+    <button
+      id="zotero-prefpane-__addonRef__-rescan-library"
+      data-l10n-id="pref-rescan-library"
+    />
   </hbox>
 </groupbox>
 <vbox>

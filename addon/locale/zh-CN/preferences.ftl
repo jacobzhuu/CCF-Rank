@@ -1,5 +1,22 @@
-pref-title = 插件模板设置示例
-pref-enable =
-    .label = 开启
-pref-input = 输入
-pref-help = { $name } Build { $version } { $time }
+pref-title = CCF Rank for Zotero 设置
+pref-description = 控制自动扫描、缓存写入和列展示方式。修改匹配阈值后，当前视图会立即按新阈值重新计算。
+pref-auto-lookup =
+    .label = 自动扫描新增或编辑后的条目
+pref-write-cache-to-extra =
+    .label = 将匹配结果写入 Extra 字段作为持久缓存
+pref-show-abbr-column =
+    .label = 显示 “CCF 会议/期刊” 列
+pref-enable-debug-log =
+    .label = 开启调试日志
+pref-min-match-score = 最低匹配分数
+pref-min-match-score-hint = 建议范围 600-1000，数值越高越保守，越低越容易命中模糊匹配。
+pref-alias-title = 自定义别名规则
+pref-alias-description = 当导入元数据里的刊会名称和 CCF 官方名称不一致时，可以在这里定义映射规则。
+pref-alias-hint = 每行一条，格式示例：Neural Information Processing Systems => NeurIPS；也支持 `别名 => 官方全称`、`别名 = 官方简称`。以 # 开头的行会被忽略。
+pref-maintenance-title = 维护操作
+pref-maintenance-desc = 当你更新了大量元数据、切换了匹配阈值，或想重建缓存时，可以手动重新扫描当前范围。
+pref-rescan-collection =
+    .label = 重新扫描当前集合
+pref-rescan-library =
+    .label = 重新扫描当前库
+pref-help = { $name } { $version } Build { $time }

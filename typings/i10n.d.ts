@@ -4,7 +4,19 @@
 // @ts-nocheck
 export type FluentMessageId =
   | 'menuitem-label'
-  | 'pref-enable'
+  | 'pref-alias-description'
+  | 'pref-alias-hint'
+  | 'pref-alias-title'
+  | 'pref-auto-lookup'
+  | 'pref-description'
+  | 'pref-enable-debug-log'
   | 'pref-help'
-  | 'pref-input'
-  | 'pref-title';
+  | 'pref-maintenance-desc'
+  | 'pref-maintenance-title'
+  | 'pref-min-match-score'
+  | 'pref-min-match-score-hint'
+  | 'pref-rescan-collection'
+  | 'pref-rescan-library'
+  | 'pref-show-abbr-column'
+  | 'pref-title'
+  | 'pref-write-cache-to-extra';

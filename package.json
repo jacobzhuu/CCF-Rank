@@ -2,9 +2,9 @@
   "name": "ccf-rank",
   "type": "module",
   "version": "1.2.0",
-  "description": "用于显示 CCF 排名的 Zotero 插件",
+  "description": "Zotero 插件：显示 CCF 刊会等级、来源与匹配详情",
   "config": {
-    "addonName": "CCF Rank",
+    "addonName": "CCF Rank for Zotero",
     "addonID": "ccf-rank@euclpts.com",
     "addonRef": "ccf-rank",
     "addonInstance": "CCFRank",
@@ -12,17 +12,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/GroundbreakerLhy/CCF-Rank.git"
+    "url": "git+https://github.com/jacobzhuu/CCF-Rank.git"
   },
-  "author": "GroundbreakerLhy",
+  "author": "jacobzhuu",
   "bugs": {
-    "url": "https://github.com/GroundbreakerLhy/CCF-Rank/issues"
+    "url": "https://github.com/jacobzhuu/CCF-Rank/issues"
   },
-  "homepage": "https://github.com/GroundbreakerLhy/CCF-Rank#readme",
+  "homepage": "https://github.com/jacobzhuu/CCF-Rank#readme",
   "license": "AGPL-3.0-or-later",
   "scripts": {
     "start": "zotero-plugin serve",
-    "build": "zotero-plugin build && tsc --noEmit",
+    "build": "zotero-plugin build && tsc --noEmit && cp .scaffold/build/ccf-rank-for-zotero.xpi ./ccf-rank-for-zotero.xpi && cp .scaffold/build/ccf-rank-for-zotero.xpi ./ccf-rank.xpi",
     "lint:check": "prettier --check . && eslint .",
     "lint:fix": "prettier --write . && eslint . --fix",
     "release": "zotero-plugin release",
